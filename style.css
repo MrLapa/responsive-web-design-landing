@@ -110,6 +110,7 @@ header nav {
 header nav ul {
   display: flex;
   gap: var(--size-28);
+  align-items: center;
 }
 
 header nav a {
