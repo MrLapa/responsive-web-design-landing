@@ -14,11 +14,14 @@
 
   --size-10: 0.625rem;
   --size-28: 1.75rem;
+  --size-40: 2.5rem;
   --size-44: 2.75rem;
   --size-50: 3.125rem;
+  --size-56: 3.5rem;
   --size-65: 4.063rem;
   --size-134: 8.375rem;
   --size-165: 10.313rem;
+  --size-480: 30rem;
 }
 
 /*
@@ -147,4 +150,23 @@ header nav a:active {
 .link-button:link,
 .link-button:visited {
   text-decoration: none;
+}
+
+.hamburguer-menu {
+  display: none;
+}
+
+@media (max-width: 30rem) {
+  .hamburguer-menu {
+    display: inline-block;
+  }
+
+  header {
+    padding: var(--size-40) var(--size-56) 0;
+  }
+
+  header nav,
+  header .link-button {
+    display: none;
+  }
 }
