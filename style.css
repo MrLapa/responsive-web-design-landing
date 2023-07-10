@@ -1,3 +1,21 @@
+:root {
+  --ff-primary: "Be Vietnam Pro", sans-serif;
+  --color-primary-1: #242e52;
+
+  --color-purple: #8b48bf;
+  --color-white: #fff;
+
+  --fs-13: 0.8125rem;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --size-10: 0.625;
+  --size-65: 4.063;
+  --size-165: 10.313;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -68,4 +86,8 @@ ul {
 #root,
 #__next {
   isolation: isolate;
+}
+
+body {
+  font-family: var(--ff-primary);
 }
