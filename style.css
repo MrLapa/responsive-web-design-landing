@@ -14,7 +14,10 @@
 
   --size-10: 0.625rem;
   --size-28: 1.75rem;
+  --size-44: 2.75rem;
+  --size-50: 3.125rem;
   --size-65: 4.063rem;
+  --size-134: 8.375rem;
   --size-165: 10.313rem;
 }
 
@@ -123,4 +126,24 @@ header nav a:visited {
 
 header nav a:active {
   color: var(--color-active-link);
+}
+
+.link-button {
+  width: var(--size-134);
+  height: var(--size-44);
+  padding: var(--size-10);
+  border-radius: var(--size-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+  font-size: var(--fs-13);
+  font-weight: var(--fw-semi-bold);
+  line-height: normal;
+}
+
+.link-button:link,
+.link-button:visited {
+  text-decoration: none;
 }
