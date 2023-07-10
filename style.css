@@ -221,4 +221,14 @@ header nav a:active {
   header .link-button {
     display: none;
   }
+
+  .banner {
+    padding: var(--size-64) var(--size-40) var(--size-40);
+    grid: repeat(2, 1fr) / 1fr;
+    grid-template-areas:
+      "player"
+      "presentation";
+    justify-content: center;
+    place-items: center;
+  }
 }
