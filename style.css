@@ -1,9 +1,10 @@
 :root {
   --ff-primary: "Be Vietnam Pro", sans-serif;
-  --color-primary-1: #242e52;
 
+  --color-primary-1: #242e52;
   --color-purple: #8b48bf;
   --color-white: #fff;
+  --color-active-link: rgba(36, 46, 82, 0.6);
 
   --fs-13: 0.8125rem;
 
@@ -12,6 +13,7 @@
   --fw-bold: 700;
 
   --size-10: 0.625rem;
+  --size-28: 1.75rem;
   --size-65: 4.063rem;
   --size-165: 10.313rem;
 }
@@ -90,4 +92,35 @@ ul {
 
 body {
   font-family: var(--ff-primary);
+}
+
+header {
+  padding: var(--size-65) var(--size-165);
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  display: flex;
+  gap: var(--size-28);
+}
+
+header nav a {
+  color: var(--color-primary-1);
+  font-size: var(--fs-13);
+  font-weight: var(--fw-semi-bold);
+  line-height: 176.1%;
+}
+
+header nav a:link,
+header nav a:visited {
+  text-decoration: none;
+}
+
+header nav a:active {
+  color: var(--color-active-link);
 }
