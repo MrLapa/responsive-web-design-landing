@@ -434,4 +434,16 @@ header nav a:active {
     padding: var(--size-10);
     grid-column: 1 / -1;
   }
+
+  .best-of-the-month {
+    padding: var(--size-58) var(--size-18);
+  }
+
+  .player-container {
+    display: none;
+  }
+
+  .player-container:nth-child(2) {
+    display: grid;
+  }
 }
