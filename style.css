@@ -7,6 +7,7 @@
   --color-primary-4: #242e53;
   --color-purple: #8b48bf;
   --color-light-purple: rgba(139, 72, 191, 0.3);
+  --color-soft-purple: rgba(139, 72, 191, 0.7);
   --color-cyan: #3cddf3;
   --color-white: #fff;
   --color-black: #000;
@@ -186,6 +187,10 @@ header nav a:active {
 
 .hamburguer-menu {
   display: none;
+}
+
+.link-button:active {
+  background-color: var(--color-soft-purple);
 }
 
 .banner {
