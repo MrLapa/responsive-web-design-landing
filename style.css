@@ -136,8 +136,13 @@ body {
 
 header {
   padding: var(--size-65) var(--size-165);
+}
+
+.header-wrapper {
+  max-width: 68rem;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 header nav {
