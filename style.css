@@ -613,4 +613,44 @@ footer {
     background-color: var(--color-primary-2);
     color: var(--color-white);
   }
+
+  footer {
+    padding: var(--size-40) var(--size-50);
+    gap: var(--size-25);
+  }
+
+  .footer-wrapper {
+    flex-direction: column-reverse;
+    gap: var(--size-25);
+  }
+
+  .container-social {
+    flex-direction: column-reverse;
+    gap: var(--size-25);
+  }
+
+  .logo-wrapper {
+    padding: var(--size-10);
+    margin: 0 auto;
+  }
+
+  .social-networks {
+    display: flex;
+    padding: var(--size-10) 0;
+    justify-content: space-between;
+  }
+
+  .container-links {
+    padding: var(--size-10);
+    gap: 9.375rem;
+    justify-content: center;
+  }
+
+  .container-subscribe .input-text {
+    width: 100%;
+  }
+
+  .copyright {
+    justify-content: center;
+  }
 }
