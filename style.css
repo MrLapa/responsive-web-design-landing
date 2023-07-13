@@ -1,3 +1,29 @@
+:root {
+  --ff-primary: "Be Vietnam Pro", sans-serif;
+
+  --color-primary-1: #242e52;
+  --color-purple: #8b48bf;
+  --color-white: #fff;
+  --color-active-link: rgba(36, 46, 82, 0.6);
+
+  --fs-13: 0.8125rem;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --size-10: 0.625rem;
+  --size-28: 1.75rem;
+  --size-40: 2.5rem;
+  --size-44: 2.75rem;
+  --size-50: 3.125rem;
+  --size-56: 3.5rem;
+  --size-65: 4.063rem;
+  --size-134: 8.375rem;
+  --size-165: 10.313rem;
+  --size-480: 30rem;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -68,4 +94,79 @@ ul {
 #root,
 #__next {
   isolation: isolate;
+}
+
+body {
+  font-family: var(--ff-primary);
+}
+
+header {
+  padding: var(--size-65) var(--size-165);
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  display: flex;
+  gap: var(--size-28);
+  align-items: center;
+}
+
+header nav a {
+  color: var(--color-primary-1);
+  font-size: var(--fs-13);
+  font-weight: var(--fw-semi-bold);
+  line-height: 176.1%;
+}
+
+header nav a:link,
+header nav a:visited {
+  text-decoration: none;
+}
+
+header nav a:active {
+  color: var(--color-active-link);
+}
+
+.link-button {
+  width: var(--size-134);
+  height: var(--size-44);
+  padding: var(--size-10);
+  border-radius: var(--size-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+  font-size: var(--fs-13);
+  font-weight: var(--fw-semi-bold);
+  line-height: normal;
+}
+
+.link-button:link,
+.link-button:visited {
+  text-decoration: none;
+}
+
+.hamburguer-menu {
+  display: none;
+}
+
+@media (max-width: 30rem) {
+  .hamburguer-menu {
+    display: inline-block;
+  }
+
+  header {
+    padding: var(--size-40) var(--size-56) 0;
+  }
+
+  header nav,
+  header .link-button {
+    display: none;
+  }
 }
