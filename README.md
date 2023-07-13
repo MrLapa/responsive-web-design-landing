@@ -12,3 +12,6 @@ To run this project you can use the following commands
 
 1. `npm install`
 2. `npm run dev`
+
+Preview URL:
+[https://zesty-marshmallow-81dbb0.netlify.app/](https://zesty-marshmallow-81dbb0.netlify.app/)
