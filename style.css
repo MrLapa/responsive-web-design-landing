@@ -4,11 +4,13 @@
   --color-primary-1: #242e52;
   --color-primary-2: #232c50;
   --color-purple: #8b48bf;
+  --color-cyan: #3cddf3;
   --color-white: #fff;
   --color-black: #000;
   --color-active-link: rgba(36, 46, 82, 0.6);
 
   --fs-13: 0.8125rem;
+  --fs-36: 2.25rem;
   --fs-50: 3.125rem;
 
   --fw-regular: 400;
@@ -17,6 +19,7 @@
 
   --size-1-75: -0.109rem;
   --size-10: 0.625rem;
+  --size-20: 1.25rem;
   --size-28: 1.75rem;
   --size-40: 2.5rem;
   --size-44: 2.75rem;
@@ -208,6 +211,34 @@ header nav a:active {
   line-height: 157.1%;
 }
 
+.information-ribbon {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+.information-ribbon-pros {
+  display: grid;
+  grid-template-columns: repeat(2, var(--size-450));
+  gap: var(--size-100);
+  padding: var(--size-40) 0;
+  justify-content: center;
+  grid-template-areas: "pros-title pros-text";
+}
+
+.information-ribbon-pros h2 {
+  grid-area: pros-title;
+  font-size: var(--fs-36);
+  line-height: 114.6%;
+  font-weight: var(--fw-bold);
+  font-style: normal;
+}
+
+.information-ribbon-pros p {
+  grid-area: pros-text;
+  font-weight: var(--fw-semi-bold);
+  line-height: 151.1%;
+}
+
 @media (max-width: 30rem) {
   .hamburguer-menu {
     display: inline-block;
@@ -230,5 +261,20 @@ header nav a:active {
       "presentation";
     justify-content: center;
     place-items: center;
+  }
+
+  .information-ribbon {
+    background-color: var(--color-cyan);
+    color: var(--color-white);
+  }
+
+  .information-ribbon-pros {
+    grid: repeat(2, 1fr) / 1fr;
+    gap: var(--size-50);
+    padding: var(--size-40) var(--size-20);
+
+    grid-template-areas:
+      "pros-title"
+      "pros-text";
   }
 }
