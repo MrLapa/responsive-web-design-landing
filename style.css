@@ -186,8 +186,25 @@ header nav a:active {
   line-height: normal;
 }
 
+.link-button-white {
+  width: var(--size-134);
+  height: var(--size-44);
+  padding: var(--size-10);
+  border-radius: var(--size-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  color: var(--color-purple);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  font-size: var(--fs-13);
+  font-weight: var(--fw-semi-bold);
+}
+
 .link-button:link,
-.link-button:visited {
+.link-button:visited,
+.link-button-white:link,
+.link-button-white:visited {
   text-decoration: none;
 }
 
@@ -379,6 +396,33 @@ header nav a:active {
   line-height: 156.6%;
 }
 
+.information-ribbon-teams {
+  padding: var(--size-64) 0;
+}
+
+.information-ribbon-wrapper {
+  max-width: 66.563rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 24.563rem auto;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-areas: "teams-title teams-button";
+}
+
+.information-ribbon-wrapper h2 {
+  color: var(--color-white);
+  font-size: var(--fs-40);
+  font-weight: var(--fw-bold);
+  line-height: 119.6%;
+  letter-spacing: -0.013rem;
+  grid-area: teams-title;
+}
+
+.information-ribbon-wrapper .link-button-white {
+  grid-area: teams-button;
+}
+
 @media (max-width: 30rem) {
   .hamburguer-menu {
     display: inline-block;
@@ -456,5 +500,23 @@ header nav a:active {
 
   .player-container:nth-child(2) {
     display: grid;
+  }
+
+  .information-ribbon-wrapper {
+    padding: var(--size-40) var(--size-50);
+    gap: var(--size-50);
+    justify-items: center;
+    grid-template-areas:
+      "teams-title"
+      "teams-button";
+  }
+
+  .information-ribbon-wrapper h2 {
+    text-align: center;
+  }
+
+  .link-button-white {
+    background-color: var(--color-primary-2);
+    color: var(--color-white);
   }
 }
