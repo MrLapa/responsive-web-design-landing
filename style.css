@@ -12,10 +12,13 @@
   --color-cyan: #3cddf3;
   --color-white: #fff;
   --color-black: #000;
+  --color-dark: #1e1e26;
   --color-light-gray: #fafafa;
   --color-soft-gray: #b3b2b7;
-  --color-soft-gray: #b3b2b7;
   --color-blue-gray: #b9b9c1;
+  --color-dark-gray: #8c8c94;
+  --color-placeholder: #a0a0a0;
+
   --color-active-link: rgba(36, 46, 82, 0.6);
 
   --fs-13: 0.8125rem;
@@ -414,6 +417,104 @@ header nav a:active {
 
 .information-ribbon-wrapper .link-button-white {
   grid-area: teams-button;
+}
+
+footer {
+  padding: 3.375rem 10.625rem var(--size-44);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-dark);
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.container-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.social-networks {
+  display: flex;
+  gap: 0.813rem;
+}
+
+.container-links {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.container-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.container-links a {
+  color: var(--color-white);
+}
+
+.container-subscribe {
+  flex-grow: 2;
+}
+
+.container-subscribe form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.563rem;
+}
+
+.form-button {
+  padding: var(--size-10);
+  border-radius: var(--size-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  font-size: var(--fs-13);
+}
+
+.container-subscribe .form-button {
+  width: 3.938rem;
+  height: 2.625rem;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+.input-text {
+  height: var(--size-44);
+  padding: var(--size-10);
+  border-radius: var(--size-50);
+  border-style: none;
+  font-size: var(--fs-13);
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+}
+
+.container-subscribe .input-text {
+  width: 12.563rem;
+}
+
+.input-text:focus {
+  outline: none;
+}
+
+.input-text::placeholder {
+  color: var(--color-placeholder); /* Desired color for the placeholder text */
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.781rem;
+  color: var(--color-dark-gray);
 }
 
 @media (max-width: 30rem) {
