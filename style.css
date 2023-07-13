@@ -162,8 +162,8 @@ header nav a {
   line-height: 176.1%;
 }
 
-header nav a:link,
-header nav a:visited {
+a:link,
+a:visited {
   text-decoration: none;
 }
 
@@ -199,13 +199,6 @@ header nav a:active {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
   font-size: var(--fs-13);
   font-weight: var(--fw-semi-bold);
-}
-
-.link-button:link,
-.link-button:visited,
-.link-button-white:link,
-.link-button-white:visited {
-  text-decoration: none;
 }
 
 .hamburguer-menu {
